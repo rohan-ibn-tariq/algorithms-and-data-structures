@@ -14,7 +14,7 @@ Dependencies:
 
 License: As of Repository License
 
-Labels: Dynamic Programming, Fibonacci Sequence, Tabulation Approach
+Labels: Dynamic-Programming, Fibonacci-Sequence, Tabulation-Approach
 """
 
 def fibonacci(n: int) -> int: 

@@ -14,7 +14,7 @@ Dependencies:
 
 License: As of Repository License
 
-Labels: Dynamic Programming, Fibonacci Sequence, Space Efficient Tabulation
+Labels: Dynamic-Programming, Fibonacci-Sequence, Space-Efficient-Tabulation
 """
 
 def fibonacci(n: int) -> int: 

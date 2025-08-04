@@ -14,7 +14,7 @@ Dependencies:
 
 License: As of Repository License
 
-Labels: Dynamic Programming, Fibonacci Sequence, Memoization
+Labels: Dynamic-Programming, Fibonacci-Sequence, Memoization
 """
 
 def fibonacci(n: int, memo: list) -> int: 

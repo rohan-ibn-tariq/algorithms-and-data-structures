@@ -13,6 +13,8 @@ Dependencies:
     - None
 
 License: As of Repository License
+
+Labels: Dynamic Programming, Fibonacci Sequence, Recursive Approach
 """
 
 def fibonacci(n: int) -> int: 

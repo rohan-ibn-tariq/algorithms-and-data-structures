@@ -5,6 +5,8 @@ Filename:    naive_solution.py
 Author:      Muhammad Rohan Ali ibn Tariq Asmat
 Created on:  2025-08-05
 Description: A naive approach to the Coin Change II Problem(hard coded set).
+             coins = [1, 3, 5]
+
 
 Usage:
     python naive_solution.py
@@ -20,35 +22,30 @@ Time Complexity: O(2^n)
 Space Complexity: O(n)
 """
 
-def cutting_rod_subproblem(prices: list, n: int, dp: list) -> int: 
+def coin_combinations(n: int) -> int: 
     """
-    Calculating the subproblem for maximum obtainable price for a 
-    rod of length n using a memoization approach.
+    Calculate the number of combinations to account for 
+    an amount n using a hard-coded set of coins, [1, 3, 5].
     """
-    if dp[n] != -1:
-        return dp[n]
-    
+
+    if n < 0:
+        return 0
     if n == 0:
-        dp[n] = 0
-        return dp[n]
+        return 1
     
-    max_price = float('-inf')
-    for i in range(1, n + 1):
-        if i <= len(prices):
-            max_price = max(max_price, prices[i - 1] + cutting_rod_subproblem(prices, n - i, dp))
-    
-    dp[n] = max_price
-    return dp[n]
+    total_combinations = 0
+    total_combinations += coin_combinations(n - 1)  # Using coin of value 1
+    total_combinations += coin_combinations(n - 3)  # Using coin of value 3
+    total_combinations += coin_combinations(n - 5)  # Using coin of value 5
+
+    return total_combinations
 
 
 if __name__ == "__main__":
-    prices = [3, 5, 8, 9, 10]
-    n = 5
-    # Should print: 15
-    print(f"Maximum obtainable price is: {cutting_rod(prices, n)}")
+    n = 4 # Target amount
+    # Should print: 3
+    print(f"All possible combinations: {coin_combinations(n)}")
 
-    prices.clear()
-    prices = [1, 5, 8, 9, 10, 17, 17, 20]
-    n = 8
-    # Should print: 22
-    print(f"Maximum obtainable price is: {cutting_rod(prices, n)}")
+    n = 6 # Target amount
+    # Should print: 8
+    print(f"All possible combinations: {coin_combinations(n)}")

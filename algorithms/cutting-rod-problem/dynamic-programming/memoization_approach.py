@@ -14,7 +14,7 @@ Dependencies:
 
 License: As of Repository License
 
-Labels: Dynamic-Programming, Cutting-Rod-Problem, Memoization
+Labels: Dynamic-Programming, Cutting-Rod-Problem, Memoization-Approach
 """
 
 def cutting_rod_subproblem(prices: list, n: int, dp: list) -> int: 

@@ -55,5 +55,5 @@ if __name__ == "__main__":
     print(f"All possible combinations: {coin_combinations(n)}")
 
     n = 7 # Target amount
-    # Should print: 8
+    # Should print: 12
     print(f"All possible combinations: {coin_combinations(n)}")

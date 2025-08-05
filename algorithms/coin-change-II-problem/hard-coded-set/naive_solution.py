@@ -16,7 +16,7 @@ Dependencies:
 
 License: As of Repository License
 
-Labels: Naive-Solution, Coint-Change-II-Problem, Hard-Coded-Set
+Labels: Naive-Solution, Coin-Change-II-Problem, Hard-Coded-Set
 
 Time Complexity: O(3^n)
 Space Complexity: O(n)
@@ -48,4 +48,8 @@ if __name__ == "__main__":
 
     n = 6 # Target amount
     # Should print: 8
+    print(f"All possible combinations: {coin_combinations(n)}")
+
+    n = 7 # Target amount
+    # Should print: 12
     print(f"All possible combinations: {coin_combinations(n)}")

@@ -19,7 +19,7 @@ License: As of Repository License
 Labels: Dynamic-Programming, Memoization-Approach, Coin-Change-II-Problem, Hard-Coded-Set
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(n + n) = O(2n) = O(n) => n1 for recursion stack and n2 for dp array.
 """
 
 def coin_combinations_subproblem(n: int, dp: list) -> int:

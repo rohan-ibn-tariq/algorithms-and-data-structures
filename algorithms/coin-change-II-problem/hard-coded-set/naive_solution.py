@@ -18,7 +18,7 @@ License: As of Repository License
 
 Labels: Naive-Solution, Coint-Change-II-Problem, Hard-Coded-Set
 
-Time Complexity: O(2^n)
+Time Complexity: O(3^n)
 Space Complexity: O(n)
 """
 

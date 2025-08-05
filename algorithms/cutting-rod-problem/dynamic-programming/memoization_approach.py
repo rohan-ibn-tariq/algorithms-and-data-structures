@@ -53,3 +53,9 @@ if __name__ == "__main__":
     n = 5
     # Should print: 15
     print(f"Maximum obtainable price is: {cutting_rod(prices, n)}")
+
+    prices.clear()
+    prices = [1, 5, 8, 9, 10, 17, 17, 20]
+    n = 8
+    # Should print: 22
+    print(f"Maximum obtainable price is: {cutting_rod(prices, n)}")

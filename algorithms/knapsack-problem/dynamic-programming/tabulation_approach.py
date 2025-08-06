@@ -5,6 +5,7 @@ Filename:    tabular_approach.py
 Author:      Muhammad Rohan Ali ibn Tariq Asmat
 Created on:  2025-08-06
 Description: A tabular approach to the knapsack problem.
+             The answer includes the selected items.
 
 Usage:
     python tabular_approach.py

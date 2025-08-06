@@ -16,7 +16,7 @@ License: As of Repository License
 
 Labels: Naive-Solution, Knapsack-Problem, Dynamic-Set
 
-Time Complexity: O(k^n)
+Time Complexity: O(2^n)
 Space Complexity: O(n)
 """
 
@@ -45,4 +45,10 @@ if __name__ == "__main__":
     weights = [4, 5, 1]
     W = 4 # Maximum weight capacity
     # Should print: 3
+    print(f"Maximum Possible Value: {knapsack(0, values, weights, W)}")
+
+    values  = [60, 100, 120]
+    weights = [10, 20, 30]
+    W = 50
+    # Should print: 220
     print(f"Maximum Possible Value: {knapsack(0, values, weights, W)}")
